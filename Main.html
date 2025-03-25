@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jiggly Cakes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Dancing Script', cursive;
+            margin: 0;
+            padding: 0;
+            background-color: #FFF5E1;
+            color: #333;
+            text-align: center;
+        }
+        header {
+            background-color: #808000;
+            color: white;
+            padding: 20px;
+            font-size: 36px;
+            font-weight: bold;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #808000;
+            font-weight: bold;
+            font-size: 22px;
+        }
+        section {
+            padding: 20px;
+        }
+        .gallery img, .menu img {
+            width: 200px;
+            height: auto;
+            margin: 10px;
+            border-radius: 10px;
+        }
+        .interactive-button {
+            background-color: #808000;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 22px;
+            cursor: pointer;
+            transition: background 0.3s;
+            font-family: 'Dancing Script', cursive;
+        }
+        .interactive-button:hover {
+            background-color: #6B8E23;
+        }
+        footer {
+            background-color: #808000;
+            color: white;
+            padding: 5px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-size: 14px;
+        }
+    </style>
+    <script>
+        function showCoupon() {
+            const couponCode = Math.random().toString(36).substr(2, 8).toUpperCase();
+            alert(`For a limited time deal, here is a coupon for 10% off your next purchase: ${couponCode}`);
+        }
+    </script>
+</head>
+<body>
+    <header>
+        Jiggly Cakes
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#menu">Menu</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="home">
+        <h2>Delicious Baked Goods, Fresh Every Day</h2>
+        <p>Experience the warmth and taste of freshly baked treats.</p>
+        <button class="interactive-button" onclick="showCoupon()">Click for a Surprise!</button>
+    </section>
+    <section id="bread">
+        <h2>Bread</h2>
+        <p>At Jiggly Cakes, we use only the finest ingredients to create our artisanal bread. Each loaf is baked fresh daily, ensuring superior quality and flavor. We take pride in making bread that is wholesome, delicious, and perfect for any occasion.</p>
+    </section>
+    <section id="bakery">
+        <h2>Bakery</h2>
+        <p>Our commitment to excellence drives us to create the finest pastries from around the world. At Jiggly Cakes, we blend tradition with innovation to craft delicious, high-quality baked goods that delight our customers every day.</p>
+    </section>
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <p>Take a look at some of our freshly baked creations!</p>
+        <div class="gallery">
+            <img src="image1.jpg" alt="Freshly baked bread">
+            <img src="image2.jpg" alt="Delicious pastries">
+            <img src="image3.jpg" alt="Artisan cakes">
+        </div>
+    </section>
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <div class="menu">
+            <img src="red_velvet.jpg" alt="Red Velvet Lava Cake">
+            <p>Red Velvet Lava Cake</p>
+            <img src="lemon_pie.jpg" alt="Lemon Pie">
+            <p>Lemon Pie</p>
+            <img src="raspberry_cheesecake.jpg" alt="Raspberry Cheesecake">
+            <p>Raspberry Cheesecake</p>
+            <img src="valentines_cupcake.jpg" alt="Valentine's Round Cupcake">
+            <p>Valentine's Round Cupcake</p>
+            <img src="matcha.jpg" alt="Matcha">
+            <p>Matcha</p>
+        </div>
+    </section>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Jiggly Cakes was founded by three siblings from Puerto Rico who wanted to share their experiences of different cultures through food. What started as a cheesy idea slowly became a reality as time went on. Early in their careers, one sibling studied and worked in high-end hotels such as the Vanderbilt Hotel, gaining invaluable culinary experience. Another sibling, a professional self-taught stay-at-home mom, always expressed love through food. The final sibling, a business mastermind, always wanted to do something meaningful with family. Together, they formed the 444 trio, bringing their dream to life in Jiggly Cakes.</p>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Phone: (787) 539-1045</p>
+        <p>Email: jigglycakes@gmail.com</p>
+        <p>Find us at: Bayamón, Puerto Rico</p>
+    </section>
+    <footer>
+        &copy; 2025 Jiggly Cakes. All Rights Reserved.
+    </footer>
+</body>
+      </html>
